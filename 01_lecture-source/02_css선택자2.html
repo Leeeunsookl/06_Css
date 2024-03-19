@@ -89,6 +89,17 @@
             height: 200px;
         }
 
+        #userId:focus , #userPwd:focus {
+            background-color: aqua;
+        }
+
+        option:disabled {
+            background-color: red;
+        }
+
+        option:enabled {
+            background-color: blue;
+        }
     </style>
 </head>
 <body>
@@ -156,6 +167,20 @@
     <input type="text" id="userId" placeholder="아이디를 입력해주세요"> <br>
     <label for="userPwd">비밀번호 : </label>
     <input type="password" id="userPwd" placeholder="비밀번호를 입력해주세요"> <br>
+    <hr>
+    <p>사용 가능한 input 태그 선택</p>
+    <pre>태그:enabled {설정내용}, 태그:disabled {설정내용}</pre>
+    <h3>당신의 연령은?</h3>
+    <select>
+        <option value="10" disabled>10대</option>
+        <option value="20">20대</option>
+        <option value="30">30대</option>
+        <option value="40">40대</option>
+        <option value="50">50대</option>
+        <option value="60" disabled>60대</option>
+    </select>
+
+    <button disabled>동작하지 않는 버튼</button>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
